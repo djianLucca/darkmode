@@ -1,0 +1,17 @@
+:root {
+  --light-color: white;
+  --dark-color: #13141c;
+  --bg-body: var(--light-color);
+  --text-color: var(--dark-color);
+  --font-family: "Baloo 2", sans-serif;
+}
+
+.dark {
+  --bg-body: var(--dark-color);
+  --text-color: var(--light-color);
+}
+
+.legible {
+  --font-family: "Open Dyslexic", sans-serif;
+  font-family: var(--font-family);
+}

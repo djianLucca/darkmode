@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darkmode e Acessibilidade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/fonts/open-dyslexic.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <div class="fabs">
+    <div class="btn btn-fab" id="darkmode">
+      <i data-feather="sun"></i>
+    </div>
+    <div class="btn btn-fab" id="legible">
+      <i data-feather="type"></i>
+    </div>
+  </div>
+  <main class="slides container-fluid">
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-center col-12 col-md-6">
+        <h1 class="display">DARKMODE</h1>
+        <h2>&</h2>
+        <h1 class="legible">ACESSIBILIDADE</h1>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">DARKMODE: o que é?</h2>
+        <p class="h4">Dark mode, modo escuro ou modo noturno é um modo de exibição de tela que substitui o fundo
+          branco padrão pelo preto ou por uma cor mais escura. O modo escuro tem como objetivo reduzir a exposição à
+          luz azul e ajudar com o cansaço visual que vem com o tempo de tela prolongado.</p>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-10">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-5">IMPLEMENTAÇÃO</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-none d-md-flex">
+              <p class="h4">HTML</p>
+            </div>
+            <div class="col-md-4 d-none d-md-flex">
+              <div class="btn-group btn-group-lg bg-white" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-dark active" id="toggle-css">CSS</button>
+                <button type="button" class="btn btn-outline-dark" id="toggle-sass">SASS</button>
+              </div>
+            </div>
+            <div class="col-md-4 d-none d-md-flex">
+              <p class="h4">JS</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <p class="d-block d-md-none h4">HTML</p>
+              <img src="images/html.png" class="img-fluid" alt="Implementação em html">
+            </div>
+            <div class="col-12 col-md-4" id="style-col">
+              <div class="d-flex d-md-none btn-group btn-group-lg bg-white" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-dark active" id="toggle-css-mobile">CSS</button>
+                <button type="button" class="btn btn-outline-dark" id="toggle-sass-mobile">SCSS</button>
+              </div>
+              <img src="images/css.png" class="img-fluid css-img" alt="Implementação em css">
+              <img src="images/sass.png" class="img-fluid sass-img" alt="Implementação em sass">
+            </div>
+            <div class="col-12 col-md-4">
+              <p class="d-block d-md-none h4">JS</p>
+              <img src="images/js.png" class="img-fluid" alt="Implementação em js">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">O CLIENTE SEMPRE TEM RAZÃO</h2>
+        <img src="images/detect.png" class="img-fluid" alt="Detecta Preferência">
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">Casos expecíficos</h2>
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header">
+                  <p class="h5">Título</p>
+                </div>
+                <div class="card-body">
+                  <p class="h6">Body</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card dark-card">
+                <div class="card-header">
+                  <p class="h5">Título</p>
+                </div>
+                <div class="card-body">
+                  <p class="h6">Body</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mx-auto mt-5">
+              <img src="images/dark-card.png" class="img-fluid" alt="Custom">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide row icons">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">ÍCONES</h2>
+        <div class="d-flex align-items-center justify-content-between w-50 mx-auto mb-3">
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+        </div>
+        <div class="d-flex align-items-center justify-content-between w-50 mx-auto mb-3 filter">
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+          <i data-feather="sun"></i>
+        </div>
+        <div class="d-flex align-items-center justify-content-between w-50 mx-auto">
+          <img src="images/filter.png" class="img-fluid" alt="Custom">
+        </div>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">ACESSIBILIDADE</h2>
+        <p class="h4">Acessibilidade na web significa que pessoas com deficiência podem usar a web. Mais
+          especificamente, a acessibilidade na
+          web significa que pessoas com deficiência podem perceber, entender, navegar, interagir e contribuir para a
+          web. E mais.
+          Ela também beneficia outras pessoas, incluindo pessoas idosas com capacidades em mudança devido ao
+          envelhecimento.</p>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-6">
+        <h2 class="mb-5">PROBLEMAS & SOLUÇÕES</h2>
+        <div class="container-fluid p-0 fake-table">
+          <div class="row">
+            <div class="col">
+              <p class="h5">Dislexia</p>
+            </div>
+            <div class="col">
+              <p class="h5">
+                <a href="https://opendyslexic.org/" target="_blank" rel="noopener noreferrer">Fonte Open Dyslexic</a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="h5">Baixa Visibilidade</p>
+            </div>
+            <div class="col">
+              <p class="h5">Contraste Alto, fontes maiores que 12 pixels</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="h5">Cegueira</p>
+            </div>
+            <div class="col">
+              <p class="h5">Botões, links e imagens com Descrição. Utilização correta de tags de Heading
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-start col-12 col-md-10">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-5">COMO RESOLVER?</h2>
+              <p class="h4">Lighthouse!!!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="images/devtools.png" class="img-fluid" alt="Abrir devtools">
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="images/lighthouse.png" class="img-fluid" alt="Lighthouse">
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="images/report.png" class="img-fluid" alt="Report">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide row">
+      <div class="d-flex flex-column align-items-center col-12 col-md-6">
+        <h2 class="mb-5">Muito Obrigado!!!</h2>
+        <p class="h1 mb-5">Alguma pergunta?</p>
+      </div>
+      <p class="h6 footer-p"><i>Desenvolvido por <a href="https://github.com/djianLucca/darkmode" target="_blank"
+            rel="noopener noreferrer">Djian Lucca</a></i></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>

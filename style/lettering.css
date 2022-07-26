@@ -1,0 +1,79 @@
+h1.display {
+  font-size: 3.5rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.125rem;
+}
+
+.txt-40 {
+  font-size: 2.5rem;
+}
+
+.txt-32 {
+  font-size: 2rem;
+}
+
+.txt-16 {
+  font-size: 1rem;
+}
+
+.txt-14 {
+  font-size: 0.875rem;
+}
+
+.txt-12 {
+  font-size: 0.75rem;
+}
+
+.txt-10 {
+  font-size: 0.625rem;
+}
+
+.txt-8 {
+  font-size: 0.5rem;
+}
+
+.bold,
+h1 {
+  font-weight: 700;
+}
+
+.semibold,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+.normal,
+h6 {
+  font-weight: 400;
+}

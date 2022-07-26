@@ -1,0 +1,130 @@
+@import url("variables.css");
+@import url("lettering.css");
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  color: var(--text-color);
+}
+
+.fabs {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.btn-fab {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(19, 20, 28, 0.4);
+  border: 2px solid var(--bg-body);
+  color: var(--bg-body);
+  background-color: var(--text-color);
+  margin: 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-fab:hover {
+  background-color: var(--bg-body);
+  color: var(--text-color);
+}
+
+main.slides {
+  scroll-snap-type: y mandatory;
+  display: flex;
+  overflow: auto;
+  flex-flow: column nowrap;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+main.slides::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+main.slides::-webkit-scrollbar-track {
+  background: var(--bg-body);
+}
+
+main.slides::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+
+section.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+#style-col .sass-img {
+  display: none;
+}
+
+#style-col.sass .sass-img {
+  display: block;
+}
+
+#style-col.sass .css-img {
+  display: none;
+}
+
+.btn-group,
+.btn-group .btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-group {
+  border-radius: 0.3rem;
+}
+
+.card {
+  color: var(--dark-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.icons svg {
+  color: var(--dark-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.fake-table .row {
+  border-bottom: 2px solid var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+
+.dark .icons .filter svg {
+  filter: invert(1);
+}
+
+.dark .card.dark-card {
+  color: var(--light-color);
+  background-color: #263238;
+}
+
+.dark .fake-table .row {
+  border-bottom: 2px solid var(--light-color);
+}
+
+p.footer-p {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+}
